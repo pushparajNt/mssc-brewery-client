@@ -9,13 +9,13 @@ import org.springframework.web.client.RestTemplate;
 
 import com.sfg.web.model.BeerDto;
 @Component
-@ConfigurationProperties(value="sfg.brewery",ignoreUnknownFields = false)
+@ConfigurationProperties(prefix="sfg.brewery",ignoreUnknownFields = false)
 public class BreweryClient {
 
 	public final String BEER_PATH_v1="/api/v1/beer/";
 	private String apihost;
     
-	private RestTemplate restTemplate;
+	private final RestTemplate restTemplate;
 	
 	
 	
