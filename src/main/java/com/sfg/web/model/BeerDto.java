@@ -8,13 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor 
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class BeerDto {
 
-	private UUID beerId;
-	private String name;
-	private String style;
+	private UUID id;
+	private String beerName;
+	private String beerStyle;
 	private Long upc;
 }
